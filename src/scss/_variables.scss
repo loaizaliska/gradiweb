@@ -1,0 +1,110 @@
+$primary-color: #453f7d;
+$secondary-color: #0ba1c4;
+$text: #121212;
+$hover: #584D9c;
+
+/*GRID*/
+$container-max-width: 84rem;
+$gutter: 1rem;
+$columns-number: 12;
+
+$screen-xs-max: 768px;
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+
+@import "grid/mixins";
+@import "grid/grid";
+
+html {
+  box-sizing: border-box;
+  font-family: 'Zen Antique', serif;
+  font-size: 16px;
+}
+*{
+  outline: none;
+  font-size:inherit;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Zen Antique', serif;
+}
+p, a , li {
+  font-family: 'Roboto Slab', serif;
+}
+p {
+  line-height: 30px;
+  color: lighten($text, 60%);
+}
+a {
+  text-decoration: none;
+  transition: all ease .4s;
+  color: inherit;
+  &:hover {
+    color: inherit;
+  }
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mb-40 {
+  margin-bottom: 40px;
+}
+.mt-40 {
+  margin-top: 40px;
+}
+.p-100 {
+  padding: 100px 0;
+}
+/*buttons*/
+
+.btn-outline {
+  padding: 20px 40px;
+  color: $primary-color ;
+  border: 1px solid $primary-color;
+  display: inline-block;
+  &:hover {
+    color: white;
+    background-color: $hover;
+    border-color: $hover;
+  }
+}
+.btn-color {
+  padding: 20px 40px;
+  border: 1px solid $primary-color;
+  color: white;
+  background-color: $primary-color;
+  display: inline-block;
+  &:hover {
+    color: white;
+    background-color: $hover;
+    border-color: $hover;
+  }
+}
+
+.primary_font {
+  font-size: 4em;
+}
+.secondary_font {
+  font-size: 3.1em;
+}
+.third_font {
+  font-size: 2em;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
